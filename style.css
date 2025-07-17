@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid orange;
+}
+
+.logo-area {
+  margin-right: 1.5rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  object-fit: cover;
+}
+
+.intro .name {
+  font-size: 2rem;
+  color:orange;
+  font-weight: bold;
+}
+
+.intro .title {
+  font-size: 1rem;
+  color: #444;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color:rgb(255, 149, 0);
+  padding: 0.75rem;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 10;
+  min-width: 200px;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown li {
+  margin: 0.5rem 0;
+}
+
+.content {
+  padding: 2rem;
+  background-color: white;
+  min-height: 300px;
+}
+
+.footer {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

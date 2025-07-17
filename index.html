@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>bitswgl</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .outbox {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+    }
+    .name-photo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    #mypic img {
+      border-radius: 50%;
+      border: 3px solid orange;
+      height: 170px;
+      width: 150px;
+    }
+    #myname {
+      color: orange;
+      font-size: 33px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+    }
+    marquee {
+      background: orange;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #navbox ul {
+      list-style: none;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+    }
+    #navbox ul li {
+      position: relative;
+    }
+    #navbox ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    #navbox ul li:hover {
+      background-color: darkorange;
+    }
+    #navbox ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: orange;
+      z-index: 1000;
+      animation: slideDown 0.3s ease-in-out;
+    }
+    #navbox ul li:hover > ul {
+      display: block;
+    }
+    #navbox ul li ul li a {
+      padding: 10px;
+      white-space: nowrap;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      padding: 25px;
+      font-size: 18px;
+    }
+    .section h2 {
+      color: orange;
+      margin-bottom: 10px;
+      border-bottom: 2px solid orange;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+
+    .tag-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+    }
+    .tag-links a {
+      text-decoration: none;
+      background-color: orange;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .tag-links a:hover {
+      background-color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="outbox">
+    <div class="name-photo">
+      <div id="mypic">
+        <img src="./1000053419.jpg" alt="My Photo">
+      </div>
+      <div id="myname">CHINDAM JAGADEESH</div>
+    </div>
+  </div>
+
+  <marquee behavior="alternate">Welcome To My Webpage</marquee>
+
+  <!-- Navbar -->
+  <div id="navbox">
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Skills Section -->
+  <div id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li id="java">Java</li>
+      <li id="python">Python (Beginner)</li>
+      <li id="c">C</li>
+      <li id="cpp">C++</li>
+      <li id="dbms">DBMS</li>
+      <li id="html">HTML</li>
+      <li id="css">CSS</li>
+      <li id="tools">GitHub, VS Code, Excel</li>
+      <li id="concepts">OOP, DSA (Beginner)</li>
+    </ul>
+  </div>
+
+  <!-- Certifications Section -->
+  <div id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Android Developer Virtual Internship (AICTE)</li>
+      <li>Advanced Java (AICTE)</li>
+      <li>Database Management (CodeTantra)</li>
+      <li>Cyber Security Essentials (Cisco)</li>
+    </ul>
+  </div>
+
+  <!-- Education Section -->
+  <div id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>Btech – Balaji Institute of Technology and Science - CSE | Laknepally | Narsampet (2023 – 2027) | CGPA: 7.5</li>
+      <li>Intermediate – Govt junior college - MPC | Bhupalpally (2021 – 2023) | 82.2%</li>
+      <li>SSC – ZPHS Jangedu | Bhupalpally (2021) | CGPA: 10</li>
+    </ul>
+  </div>
+
+  <!-- Languages Section -->
+  <div id="languages" class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li id="telugu">Telugu (Native)</li>
+      <li id="hindi">Hindi (Conversational)</li>
+      <li id="english">English (Professional Proficiency)</li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <ul>
+      <li>Phone: 8186032747</li>
+      <li>Email: chindamjagadeesh2004@gmail.com</li>
+      <li>Address: H-No: 10-72, Jangedu, Bhupalpally, Jayashankar</li>
+    </ul>
+  </div>
+
+</body>
+</html>
